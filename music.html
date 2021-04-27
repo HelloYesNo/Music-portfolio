@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Music</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="background-img"
+      style="background-image: url(images/Background.jpg)"
+    >
+      <div class="container">
+        <div class="navbar">
+          <div class="leftside">
+            <div class="navlink">
+              <a href="index.html">Home</a>
+            </div>
+
+            <div class="navlink active-nav-link">
+              <a href="music.html">Music</a>
+            </div>
+
+            <div class="navlink">
+              <a href="about.html">About</a>
+            </div>
+          </div>
+
+          <div class="rightside">
+            <div>HYG</div>
+          </div>
+        </div>
+
+        <div class="content-wraper">
+          <div class="items">
+            <div class="item">
+              <div
+                class="background"
+                style="
+                  background-image: url(https://i1.sndcdn.com/artworks-TGf02znLSh9PtVhk-DTXzPw-t500x500.jpg);
+                "
+              ></div>
+
+              <a
+                href="https://soundcloud.com/alan_aj/project-k"
+                target="_blank"
+              >
+                <div class="img-text">
+                  <div class="subtitle">
+                    <h1>project K</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <div
+                class="background"
+                style="
+                  background-image: url(https://i1.sndcdn.com/artworks-WAzNcsHCXazxX89r-99A6Bw-t500x500.jpg);
+                "
+              ></div>
+
+              <a
+                href="https://soundcloud.com/alan_aj/stt-v4-close"
+                target="_blank"
+              >
+                <div class="img-text">
+                  <div class="subtitle">
+                    <h1>STT</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <div
+                class="background"
+                style="
+                  background-image: url(https://i1.sndcdn.com/artworks-000412303974-42i0dn-t500x500.jpg);
+                "
+              ></div>
+
+              <a
+                href="https://soundcloud.com/alan_aj/open-my-mind-1"
+                target="_blank"
+              >
+                <div class="img-text">
+                  <div class="subtitle">
+                    <h1>open my mind</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <div
+                class="background"
+                style="
+                  background-image: url(https://i1.sndcdn.com/artworks-000622380127-wchblt-t500x500.jpg);
+                "
+              ></div>
+
+              <a
+                href="https://soundcloud.com/alan_aj/dreamland"
+                target="_blank"
+              >
+                <div class="img-text">
+                  <div class="subtitle">
+                    <h1>dreamland</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const items = document.querySelectorAll(".item");
+
+    items.forEach((item) => {
+      item.addEventListener("mouseover", () => {
+        item.childNodes[1].classList.add("img-appear");
+      });
+
+      item.addEventListener("mouseout", () => {
+        item.childNodes[1].classList.remove("img-appear");
+      });
+    });
+  </script>
+</html>
